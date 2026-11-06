@@ -11,13 +11,14 @@ int main() {
     srand(time(NULL));
     int random_number = rand() % 100 + 1; 
 
-    
+    int attempts = 0;
     int guess;
 
 //dit a l'user d'ecrire un nombre
     printf("choisissez un nombre entre 1 et 100: "); 
 //attribue le nombre à guess
-    scanf("%d", &guess); 
+    scanf("%d", &guess);
+    attempts++;
 
 
 //boucle tant que le guess n'est pas bon
@@ -28,6 +29,7 @@ int main() {
         printf("C'est plus.\n");
         printf("choisissez un nombre entre 1 et 100: ");
         scanf("%d", &guess);
+        attempts++;
         } 
         
 //tant que le nombre guess est incorrect (supérieur), il redemande de guess
@@ -35,11 +37,13 @@ int main() {
             printf("C'est moins.\n");
             printf("choisissez un nombre entre 1 et 100: ");
             scanf("%d", &guess);
+            attempts++;
         }
 }
 
 //si le nombre est correct, user est félicité
 if (guess == random_number) {
         printf("Félicitations! Vous avez deviné le nombre %d.\n", random_number);
+        printf("Vous avez utilisé %d tentatives.\n", attempts);
         } 
 }
