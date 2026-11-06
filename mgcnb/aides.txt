@@ -1,0 +1,2 @@
+Claude a été utiliser pour m'aider a restructurer le code (par example lorsqu'une fonction était supposée arriver avant une autre) ainsi qu'avec la syntaxe (vérifier les semicolon et braces )
+Aucune IA ou aide internet n'a été utilisé dans l'écriture des commandes elles memes et appels de fonctions
