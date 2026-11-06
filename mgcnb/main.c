@@ -27,6 +27,7 @@ int main() {
 //tant que le nombre guess est incorrect (inférieur), il redemande de guess
         if (guess < random_number) { 
         printf("C'est plus.\n");
+        printf("essai numéro %d\n", attempts);
         printf("choisissez un nombre entre 1 et 100: ");
         scanf("%d", &guess);
         attempts++;
@@ -35,6 +36,7 @@ int main() {
 //tant que le nombre guess est incorrect (supérieur), il redemande de guess
             else if (guess > random_number) {
             printf("C'est moins.\n");
+            printf("essai numéro %d\n", attempts);
             printf("choisissez un nombre entre 1 et 100: ");
             scanf("%d", &guess);
             attempts++;
